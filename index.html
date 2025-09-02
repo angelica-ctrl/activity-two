@@ -41,8 +41,19 @@
     object-fit: cover;
   }
 
-  td[rowspan="2" colspan="2"] img,
-  td[colspan="2"] img {
+    td[rowspan="2"][colspan="2"],
+  td[colspan="2"],
+  td[rowspan="2"] {
+    position: relative;
+    overflow: hidden; 
+  }
+
+  td[rowspan="2"][colspan="2"] img,
+  td[colspan="2"] img,
+  td[rowspan="2"] img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
