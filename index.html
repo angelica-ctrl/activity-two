@@ -2,59 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Harry Potter Movies</title>
+  <title>Harry Potters Movies</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      color: white;
-      background: url("images/thisbg.jpg") no-repeat center center fixed;
-      background-size: cover;
-    }
-    h2 {
-      margin: 20px 0;
-      text-shadow: 2px 2px 5px black;
-    }
-    table {
-      margin: auto;
-      margin-bottom: 4px; 
-      border-spacing: 10px;
-      background: rgba(0,0,0,0.6);
-      padding: 15px;
-      border-radius: 10px;
-    }
-    td {
-      border: 2px solid white;
-      width: 200px;
-      height: 300px;
-    }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-  </style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background: url("images/thisbg.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  h2 {
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  table {
+    margin: auto;
+    margin-bottom: 4px;
+    border-spacing: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  td {
+    border: 2px solid white;
+    width: 200px; 
+    height: 300px; 
+  }
+
+  td img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+    td[rowspan="2"][colspan="2"],
+  td[colspan="2"],
+  td[rowspan="2"] {
+    position: relative;
+    overflow: hidden; 
+  }
+
+  td[rowspan="2"][colspan="2"] img,
+  td[colspan="2"] img,
+  td[rowspan="2"] img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
 </head>
 <body>
 
-  <h2>Harry Potter Movies</h2>
+    <h2>Harry Potters Movies</h2>
 
   <table>
     <tr>
-      <td><img src="images/movie1.jpg" alt=""></td>
-      <td><img src="images/movie2.jpg" alt=""></td>
-      <td><img src="images/movie3.jpg" alt=""></td>
-      <td><img src="images/movie4.jpg" alt=""></td>
+      <td><img src="images/movie1.jpg" alt="Harry Potter and the Sorcerer's Stone"></td>
+      <td><img src="images/movie2.jpg" alt="Chamber of Secrets"></td>
+      <td><img src="images/movie3.jpg" alt="Harry Potter and the Prisoner of Azkaban"></td>
+      <td><img src="images/movie4.jpg" alt="Golbet of Fire"></td>
     </tr>
     <tr>
-      <td><img src="images/movie5.jpg" alt=""></td>
-      <td><img src="images/movie6.jpg" alt=""></td>
-      <td rowspan="2" colspan="2"><img src="images/movie8.jpg" alt=""></td>
+      <td><img src="images/movie5.jpg" alt="Harry Potter and the Order of the Phoenix"></td>
+      <td><img src="images/movie6.jpg" alt="Harry Potter and the Half-Blood Prince"></td>
+      <td rowspan="2" colspan="2"><img src="images/movie8.jpg" alt="Harry Potter and The Deathly Hallows 2"></td>
     </tr>
     <tr>
-      <td colspan="2"><img src="images/movie7.jpg" alt=""></td>
+      <td colspan="2"><img src="images/movie7.jpg" alt="Harry Potter and The Deathly Hallows "></td>
     </tr>
   </table>
 
