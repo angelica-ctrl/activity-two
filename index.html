@@ -25,28 +25,19 @@
     background: rgba(0, 0, 0, 0.6);
     padding: 15px;
     border-radius: 10px;
+    table-layout: fixed; /* ensures consistent cell sizing */
   }
 
   td {
     border: 2px solid white;
     padding: 0;
-    width: 200px; /* default width for single cell */
-    height: 300px; /* default height for single cell */
   }
 
   td img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* makes all images fill their cells */
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* Ensure images in cells that span multiple rows/columns scale correctly */
-  td[rowspan][colspan] img,
-  td[colspan="2"] img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 </style>
 </head>
